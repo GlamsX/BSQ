@@ -1,0 +1,16 @@
+#!/bin/bash
+
+ls=`ls ./mouli_maps/`
+let count="0"
+let failed="0"
+for file in $ls; do
+    ./bsq "./mouli_maps/$file" > "./a"
+    r=`diff --text ./mouli_maps_solved/$file ./a`
+    if [[ ! -z $r ]]; then
+        echo "Wrong: $file"
+        let failed="$failed+1"
+    fi
+    let count="$count+1"
+done
+echo "Total: $count"
+echo "Failed: $failed"
