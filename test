@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Test bash edited y : Yannick combes
+# Test bash edited by : Shiranuit 
 # githublink: https://github.com/Shiranuit
 
 ls=`ls ./mouli_maps/`
