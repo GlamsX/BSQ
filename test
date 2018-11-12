@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Test bash edited y : Yannick combes
+# githublink: https://github.com/Shiranuit
+
 ls=`ls ./mouli_maps/`
 let count="0"
 let failed="0"
